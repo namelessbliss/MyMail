@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DetailsFragment">
+
+    <LinearLayout
+        android:id="@+id/fragmentDetailsMailWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sujeto: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFragmentSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hola mundo" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="De: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFragmentSenderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="alejandrofpo@gmail.com" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFragmentMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensaje" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
